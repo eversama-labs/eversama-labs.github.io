@@ -2,17 +2,19 @@
 
 import Image from 'next/image';
 import logo from '../rsc/logo.png';
+import zayaan from '../rsc/zayaan.png';
 
 const members = [
     {
         name: 'Zayaan Khan',
+        photo: zayaan,
         role: 'Founder & Lead',
         bio: 'Leads the lab’s vision, research direction, and product strategy for all projects.',
     },
     {
         name: 'Collaborators',
         role: 'Product & Engineering',
-        bio: 'Bringing people together for design, engineering, and experimentation across various projects.',
+        bio: 'Bringing people together for design, engineering, and experimentation across various projects. Our collaborators contribute fresh ideas, build and test prototypes, and help turn early research into polished, human-centered tools. Together we share feedback openly and keep learning from every experiment.',
     },
 ];
 
@@ -50,12 +52,12 @@ export default function About() {
 
                 <div className="aboutGrid">
                     <section className="aboutPanel">
-                        <h2>Our mission</h2>
+                        <h2>The mission</h2>
                         <p>
                             The name Sama (سماء) means “skies” in Arabic, while Ever
                             represents our commitment to continually reach beyond what
                             is possible. Together, EverSama embodies a pursuit of
-                            progress without a fixed ceiling.
+                            progress to build people-centered solutions without a fixed ceiling.
                         </p>
                     </section>
 
@@ -75,6 +77,15 @@ export default function About() {
                         <div className="memberGrid">
                             {members.map((member) => (
                                 <article key={member.name} className="memberCard">
+                                    {member.photo && (
+                                        <Image
+                                            src={member.photo}
+                                            alt={member.name}
+                                            width={96}
+                                            height={96}
+                                            className="memberPhoto"
+                                        />
+                                    )}
                                     <h3>{member.name}</h3>
                                     <span>{member.role}</span>
                                     <p>{member.bio}</p>

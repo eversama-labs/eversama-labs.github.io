@@ -32,13 +32,13 @@ export default function Navbar() {
       <div className="navbar-container">
         <ul className={`nav-menu ${montserrat_font.className} ${isOpen ? 'nav-menu-open' : ''}`}>
           <li className="nav-item">
-            <Link href="/" className="nav-links">Home</Link>
+            <Link href="/" className="nav-links" onClick={() => setIsOpen(false)}>Home</Link>
           </li>
           <li className="nav-item">
-            <Link href="/projects" className="nav-links">Projects</Link>
+            <Link href="/projects" className="nav-links" onClick={() => setIsOpen(false)}>Projects</Link>
           </li>
           <li className="nav-item">
-            <Link href="/about" className="nav-links">About</Link>
+            <Link href="/about" className="nav-links" onClick={() => setIsOpen(false)}>About</Link>
           </li>
         </ul>
       </div>
