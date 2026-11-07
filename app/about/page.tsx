@@ -9,7 +9,7 @@ const members = [
     {
         name: 'Zayaan Khan',
         photo: zayaan,
-        linkedinUrl: 'https://www.linkedin.com/in/replace-with-profile',
+        linkedinUrl: 'https://www.linkedin.com/in/zayaankkhan/',
         role: 'Founder & Lead',
         bio: 'Leads the lab’s vision, research direction, and product strategy for all projects.',
     },
@@ -95,7 +95,7 @@ export default function About() {
                                                 href={member.linkedinUrl}
                                                 className="linkedinLink"
                                                 aria-label={`Visit ${member.name}'s LinkedIn profile`}
-                                                target="https://www.linkedin.com/in/zayaankkhan/"
+                                                target="_blank"
                                                 rel="noopener noreferrer"
                                             >
                                                 <Image
