@@ -536,6 +536,30 @@
     border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
+.memberName {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.memberName h3 {
+    margin: 0;
+}
+
+.linkedinLink {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+    border-radius: 50%;
+}
+
+.linkedinLink:focus-visible {
+    outline: 2px solid #1d2c39;
+    outline-offset: 3px;
+}
+
 .memberCard span {
     display: inline-block;
     margin-bottom: 0.75rem;

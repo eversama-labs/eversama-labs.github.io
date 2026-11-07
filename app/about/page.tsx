@@ -3,11 +3,13 @@
 import Image from 'next/image';
 import logo from '../rsc/logo.png';
 import zayaan from '../rsc/zayaan.png';
+import linkedinLogo from '../rsc/linkedin-logo.png';  
 
 const members = [
     {
         name: 'Zayaan Khan',
         photo: zayaan,
+        linkedinUrl: 'https://www.linkedin.com/in/replace-with-profile',
         role: 'Founder & Lead',
         bio: 'Leads the lab’s vision, research direction, and product strategy for all projects.',
     },
@@ -86,7 +88,25 @@ export default function About() {
                                             className="memberPhoto"
                                         />
                                     )}
-                                    <h3>{member.name}</h3>
+                                    <div className="memberName">
+                                        <h3>{member.name}</h3>
+                                        {member.linkedinUrl && (
+                                            <a
+                                                href={member.linkedinUrl}
+                                                className="linkedinLink"
+                                                aria-label={`Visit ${member.name}'s LinkedIn profile`}
+                                                target="https://www.linkedin.com/in/zayaankkhan"
+                                                rel="noopener noreferrer"
+                                            >
+                                                <Image
+                                                    src={linkedinLogo}
+                                                    alt=""
+                                                    width={30}
+                                                    height={30}
+                                                />
+                                            </a>
+                                        )}
+                                    </div>
                                     <span>{member.role}</span>
                                     <p>{member.bio}</p>
                                 </article>
