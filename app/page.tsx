@@ -6,7 +6,7 @@ import mailLogo from './rsc/mail.png';
 
 const links = [
   {
-    label: 'EverSama Labs GitHub',
+    label: 'Github',
     href: 'https://github.com/eversama-labs',
     kind: 'github',
   },
@@ -16,17 +16,12 @@ const links = [
     kind: 'linkedin',
   },
   {
-    label: 'Zayaan`s Linkedin',
-    href: 'https://www.linkedin.com/in/zayaankkhan',
-    kind: 'linkedin',
-  },
-  {
     label: 'Email',
     href: 'mailto:eversamalabs@gmail.com',
     kind: 'email',
   },
   {
-    label: 'Buy the org a coffee',
+    label: 'Buy us a coffee',
     href: 'https://buymeacoffee.com/eversamalabs',
     kind: 'coffee',
   },

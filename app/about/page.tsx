@@ -95,7 +95,7 @@ export default function About() {
                                                 href={member.linkedinUrl}
                                                 className="linkedinLink"
                                                 aria-label={`Visit ${member.name}'s LinkedIn profile`}
-                                                target="https://www.linkedin.com/in/zayaankkhan"
+                                                target="https://www.linkedin.com/in/zayaankkhan/"
                                                 rel="noopener noreferrer"
                                             >
                                                 <Image
