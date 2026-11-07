@@ -9,7 +9,7 @@ const members = [
     {
         name: 'Zayaan Khan',
         photo: zayaan,
-        linkedinUrl: 'https://www.linkedin.com/in/zayaankkhan/',
+        linkedinUrl: 'https://www.linkedin.com/in/zayaankkhan',
         role: 'Founder & Lead',
         bio: 'Leads the lab’s vision, research direction, and product strategy for all projects.',
     },
