@@ -14,7 +14,6 @@ const projects = [
       'EverAround is an AI-powered assistive app designed to help visually impaired users better understand their surroundings in real time. It combines computer vision and multi-modal machine learning into a streamlined system optimized for low-latency performance. Users can ask questions in real time and receive immediate responses about nearby objects, layout, and context, making navigation and situational awareness more accessible and intuitive.',
     link: 'TO BE RELEASED',
     status: 'In Progress',
-    collaborators: 'Collaborators: Aliyan Sheikh and Ammad Raja',
   },
 ];
 
@@ -36,10 +35,6 @@ export default function ProjectsPage() {
               </div>
 
               <p>{project.description}</p>
-
-              {project.collaborators ? (
-                <p className="projectCollaborators">{project.collaborators}</p>
-              ) : null}
 
               {project.link === 'TO BE RELEASED' ? (
                 <span className="projectLink projectLinkDisabled">To be released</span>
